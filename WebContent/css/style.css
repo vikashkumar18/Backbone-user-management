@@ -1,0 +1,100 @@
+
+#user .txtinput { 
+display: block;
+font-family: "Helvetica Neue", Arial, sans-serif;
+border-style: solid;
+border-width: 1px;
+border-color: #dedede;
+margin-bottom: 20px;
+font-size: 1.55em;
+padding: 11px 25px;
+padding-left: 55px;
+width: 90%;
+color: #777;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; 
+transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+-webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+-moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+-o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+}
+
+#user .txtinput:focus { 
+color: #333;
+border-color: rgba(41, 92, 161, 0.4);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+outline: 0 none; 
+}
+
+#user input#fname {
+background: #fff url('../images/user.png') 5px 4px no-repeat;
+}
+#user input#email {
+background: #fff url('../images/email.png') 5px 4px no-repeat;
+}
+#user input#website {
+background: #fff url('../images/website.png') 5px 4px no-repeat;
+}
+#user input#phno {
+background: #fff url('../images/phone.png') 5px 4px no-repeat;
+}
+
+#user textarea {
+display: block;
+font-family: "Helvetica Neue", Arial, sans-serif;
+border-style: solid;
+border-width: 1px;
+border-color: #dedede;
+margin-bottom: 15px;
+font-size: 1.5em;
+padding: 11px 25px;
+padding-left: 55px;
+width: 90%;
+height: 180px;
+color: #777;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; 
+transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+-webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+-moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+-o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+}
+#user textarea:focus {
+color: #333;
+border-color: rgba(41, 92, 161, 0.4);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+outline: 0 none; 
+}
+#user textarea.txtblock {
+background: #fff url('../images/speech.png') 5px 4px no-repeat;
+}
+.formwrapper{
+width:60%;
+margin:0 auto;
+}
+
+
+/** datatabe css properties**/
+#user-list_wrapper .row{
+	margin-left: 0px;
+}
+#user-list_wrapper input{
+	width:66%;
+}
+
+/**content editable**/
+.content-edit{
+	color:blueviolet;
+}
+
+/** edit user**/
+.inactive-link {
+   pointer-events: none;
+   cursor: default;
+}
