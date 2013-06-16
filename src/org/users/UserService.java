@@ -54,7 +54,7 @@ public class UserService {
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public User update(User user) {
 		user.setName(user.getFirstName()+""+user.getLastName());
-		System.out.println("Updating wine: " + user.getName());
+		System.out.println("Updating user: " + user.getName());
 		
 		dao.update(user);
 		return user;
