@@ -16,7 +16,7 @@ function($, _, Backbone,custom,UserTemplate)
 		
 	},
 	saveUser : function(e){
-		 e.preventDefault();
+		 //e.preventDefault();
 		
 		var obj=$("form").serializeObject();
 	    var that = this;
@@ -26,7 +26,7 @@ function($, _, Backbone,custom,UserTemplate)
 		this.model.set(obj);
 		this.model.unset('userId',{silent:true});
 		
-		alert(JSON.stringify(this.model));
+		//alert(JSON.stringify(this.model));
 		this.model.save(null,{
 			success:function(user){
 				alert("user created successfully!!");
