@@ -46,7 +46,7 @@ function($, _, Backbone,custom,UserTemplate)
 	
 		
 		this.$el.html(template);
-		$(".content").append(this.$el);
+		$(".content").html(this.$el);
 		
 		
         },
