@@ -33,7 +33,7 @@ define([ 'jquery', 'underscore','backbone','custom','datatable','dt_bootstrap','
 
 			var template = _.template(EditListTmpl);
 			this.$el.html(template);
-			$(".content").append(this.el);
+			$(".content").html(this.$el);
 			$(".progress").hide();
 		this.collection.each(this.renderOne);
 		
