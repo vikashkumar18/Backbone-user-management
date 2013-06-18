@@ -16,7 +16,7 @@ function($, _, Backbone,custom,UserTemplate)
 		
 	},
 	saveUser : function(e){
-		 //e.preventDefault();
+		 e.preventDefault();
 		
 		var obj=$("form").serializeObject();
 	    var that = this;
