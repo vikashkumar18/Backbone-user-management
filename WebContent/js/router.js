@@ -29,71 +29,26 @@ define([
     
     
     
-/*	 function refresh(){
-    	var urlArr = Backbone.history.fragment.split('/');
-    	if(urlArr[4]==undefined ){
-   
-			sessionStorage.brandFlag=false;
-			sessionStorage.priceFlag=false;
-			sessionStorage.categoryFlag=false;
-		}
-    	
-    	
-    	if( urlArr[4]!='searchBrandSegment'){
-    		sessionStorage.brandFlag=false;
-    	}
-    	
-
-    	else if( urlArr[4]!='searchPriceSegment'){
-    		sessionStorage.priceFlag=false;
-    	}
-
-    	else if( urlArr[4]!='searchCategorySegment'){
-    		sessionStorage.categoryFlag=false;
-    	}
-    	
 	
-	
-		if($(".main-header").html()==""){
-			console.log("Refresh Done : "+Backbone.history.fragment);
-			headerView.render();
-		
-			
-				
-			
-			switch(urlArr.length) {
-			case 4 : 
-				console.log("Refresh-Render : " + urlArr[1]);
-				innerMenuView.render({mainid:urlArr[1]});
-				break;
-				
-			case 5 : 
-			case 6 : 
-				console.log("Refresh-Render : " + urlArr[1]);
-				innerMenuView.render({mainid:urlArr[1]});
-				sideMenuView.render({mainid:urlArr[1],subid:urlArr[3]});
-				break;
-			}
-		}
-	}*/
-    
     
    
     
    app_router.on('route:home', function () {
     	if(!users)
     	 users = new Users();
-    	$(".content").empty();
+    	
     	if(editListView){
-  			console.log("removed1");
+  			
   			editListView.remove();
   		}
     	
     	if(defaultlistview){
+    		
     	 defaultlistview.remove();
     	 var newDOMel=$('<div class="content"/>');
-    	 $(".content-parent").append(newDOMel);
+    	 $(".content-parent").html(newDOMel);
     	}
+    
     	defaultlistview=new DefaultListView({collection:users});
     	defaultlistview.render();
     	
@@ -104,7 +59,7 @@ define([
    
    app_router.on('route:createUser', function () {
    		
-   		$(".content").empty();
+   	
    		if(!user){
    			user = new User();
    		}
@@ -119,17 +74,18 @@ define([
    });
    app_router.on('route:editUser', function () {
   		
-  		$(".content").empty();
+  		
   		if(defaultlistview){
   		 defaultlistview.remove();
   		 var newDOMel=$('<div class="content"/>');
-    	 $(".content-parent").append(newDOMel);
+    	 $(".content-parent").html(newDOMel);
   		}
+  
   		if(!users){
   	    	 users = new Users();
   		}
   		if(editListView){
-  			console.log("removed");
+  		
   			editListView.remove();
   		}
   		editListView = new EditListView({collection:users});
