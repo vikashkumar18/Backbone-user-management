@@ -19,7 +19,7 @@ define([
   });
   
   var initialize = function(){
-		//DONT REMOVE ANYTHING!!
+		
 	var users;
 	var user;
 	var defaultlistview;
@@ -29,7 +29,7 @@ define([
     
     
     
-	 function refresh(){
+/*	 function refresh(){
     	var urlArr = Backbone.history.fragment.split('/');
     	if(urlArr[4]==undefined ){
    
@@ -75,7 +75,7 @@ define([
 				break;
 			}
 		}
-	}
+	}*/
     
     
    
