@@ -5,7 +5,7 @@ function($, _, Backbone,custom,UserTemplate)
 	var CreateUserView = Backbone.View.extend({
 		el : $('<div/>'),
 		events:{
-			'click .btn-success':'saveUser'
+			'click .saveuser':'saveUser'
 		},
 	initialize:function(){
 		_.bindAll(this,'render','saveUser');
