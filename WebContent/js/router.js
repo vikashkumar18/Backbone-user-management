@@ -58,6 +58,12 @@ define([
     });
    
    app_router.on('route:createUser', function () {
+	  
+	   if(createUserView){
+		   createUserView.remove();
+	   		}
+	  		
+	  		
    		
    	
    		if(!user){
@@ -74,16 +80,16 @@ define([
    });
    app_router.on('route:editUser', function () {
   		
-  		
+	
   		if(defaultlistview){
   		 defaultlistview.remove();
   		 var newDOMel=$('<div class="content"/>');
     	 $(".content-parent").html(newDOMel);
   		}
   
-  		if(!users){
+
   	    	 users = new Users();
-  		}
+  		
   		if(editListView){
   		
   			editListView.remove();
